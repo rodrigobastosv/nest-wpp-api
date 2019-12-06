@@ -60,6 +60,27 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Deploy on Heroku
+
+```bash
+# install heroku cli
+$ npm install -g heroku
+
+# heroku login
+$ heroku login
+
+# setting node config on heroku
+$ heroku config:set NPM_CONFIG_PRODUCTION=false
+$ heroku config:set NODE_ENV=production
+
+# create app on heroku
+$ heroku create
+
+# deploy via git
+$ git push heroku master
+
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
